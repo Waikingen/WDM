@@ -1,4 +1,4 @@
-// Page Transitions XXX
+// Page Transitions XXX v2.0
 
 // $("a").click(function (e) {
 //   e.preventDefault(); // prevent default anchor behavior
