@@ -1,4 +1,4 @@
-// Page Transitions ASDASDASD
+// Page Transitions
 
 // $("a").click(function (e) {
 //   e.preventDefault(); // prevent default anchor behavior
