@@ -1,5 +1,8 @@
-// Page Transitions V12asd
+//-------------------------------------
+// WDM MAIN SCRIPT - V1
+//-------------------------------------
 
+// Page Transitions
 // $("a").click(function (e) {
 //   e.preventDefault(); // prevent default anchor behavior
 //   var goTo = this.getAttribute("href"); // store anchor href
