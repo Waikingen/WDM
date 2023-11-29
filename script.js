@@ -1,4 +1,6 @@
-// Page Transitions v1.1
+//-------------------------------------
+// WDM MAIN SCRIPT - V1
+//-------------------------------------
 
 // $("a").click(function (e) {
 //   e.preventDefault(); // prevent default anchor behavior
