@@ -1,24 +1,47 @@
 //-------------------------------------
-// WDM MAIN SCRIPT - V1.2
+// WDM MAIN SCRIPT - V1.3
+// SCROLLTRIGGER TEST
 //-------------------------------------
 
-// Page Transitions
-// $("a").click(function (e) {
-//   e.preventDefault(); // prevent default anchor behavior
-//   var goTo = this.getAttribute("href"); // store anchor href
+console.log("connected");
 
-//   setTimeout(function () {
-//     window.location = goTo;
-//   }, 600); // 1200 ms duration
-// });
+/* START STOP SCROLL TIMEOUT */
+
+//  document.addEventListener("DOMContentLoaded", function () {
+//    window.SScroll.call.stop();
+
+//    setTimeout(function () {
+//      window.SScroll.call.start();
+//    }, 2000); //delay is in milliseconds
+//  });
 
 document.addEventListener("DOMContentLoaded", function () {
-  $(".page-wrapper").addClass("loading");
+  window.SScroll.call.stop();
+});
+
+/* END STOP SCROLL TIMEOUT */
+
+ScrollTrigger.addEventListener("scrollStart", () => {
+    
+  const trigger = document.getElementById("trigger-hero");
+  trigger.click();
 
   setTimeout(function () {
-    $(".page-wrapper").removeClass("loading");
-  }, 2000); //delay is in milliseconds
+    window.SScroll.call.start();
+  }, 1500); //delay is in milliseconds
 });
+
+/* START STOP SCROLL TRIGGER */
+
+// ScrollTrigger.create({
+//   trigger: "#scrolltwo",
+//   start: "bottom bottom",
+//   onToggle: (self) => {
+//     window.SScroll.call.stop();
+//   },
+// });
+
+/* START STOP SCROLL TRIGGER */
 
 let transitionTrigger = $(".transition-trigger");
 let introDurationMS = 0;
